@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logo {
+  background-image: url(./assets/LOGO/LOGO.png);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 10s linear infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  width: max-content;
+}
+
+.animate-scroll > img {
+  flex-shrink: 0;
+  margin-right: 1rem;
+}
+
+.mycss {
+  background: lime;
+  margin-top: -100px;
+}
